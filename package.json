@@ -1,0 +1,50 @@
+{
+  "name": "react-spa-spark",
+  "version": "1.0.0",
+  "description": "A basic react setup allowing to build single page applications",
+  "main": "index.js",
+  "repository": "https://github.com/MKovvalski/react-spa-spark.git",
+  "author": "Mateusz Jakub Kowalski",
+  "license": "MIT",
+  "private": false,
+  "scripts": {
+    "clean": "rm -rf build/*",
+    "build": "yarn clean; webpack --config config/webpack.prod.config.js",
+    "start:dev": "node config/webpack.dev-server.js",
+    "start:prod": "yarn build; serve build"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.6.0",
+    "@babel/plugin-proposal-object-rest-spread": "^7.5.5",
+    "@babel/polyfill": "^7.6.0",
+    "@babel/preset-env": "^7.6.0",
+    "@babel/preset-react": "^7.0.0",
+    "@hot-loader/react-dom": "^16.9.0",
+    "babel-core": "^6.26.3",
+    "babel-loader": "^8.0.6",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-react": "^6.24.1",
+    "chalk-animation": "^1.6.0",
+    "css-loader": "^3.2.0",
+    "file-loader": "^4.2.0",
+    "html-loader": "^0.5.5",
+    "html-webpack-plugin": "^3.2.0",
+    "mini-css-extract-plugin": "^0.8.0",
+    "node-sass": "^4.12.0",
+    "path": "^0.12.7",
+    "react-hot-loader": "^4.12.13",
+    "sass-loader": "^8.0.0",
+    "serve": "^11.1.0",
+    "style-loader": "^1.0.0",
+    "uglifyjs-webpack-plugin": "^2.2.0",
+    "webpack": "^4.40.0",
+    "webpack-cli": "^3.3.8",
+    "webpack-dev-server": "^3.8.0",
+    "webpack-merge": "^4.2.2"
+  },
+  "dependencies": {
+    "react": "^16.9.0",
+    "react-dom": "^16.9.0",
+    "react-router-dom": "^5.0.1"
+  }
+}

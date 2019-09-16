@@ -14,7 +14,6 @@ module.exports = merge(
     mode: 'development',
     devtool: 'eval', // fastest mode for development
     plugins: [
-      new webpack.SourceMapDevToolPlugin(),
       new webpack.HotModuleReplacementPlugin(),
       new webpack.NamedModulesPlugin(),
 

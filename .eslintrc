@@ -1,0 +1,51 @@
+// You can find the list of all avaiable rules at https://eslint.org/docs/rules/
+{
+  "extends": [
+    "standard",
+    "standard-react"
+  ],
+  "parserOptions": {
+    "ecmaVersion": 2018,
+    "sourceType": "module",
+    "ecmaFeatures": {
+      "jsx": true,
+      "modules": true
+    }
+  },
+  "rules": {
+    "max-len": [
+      2,
+      120
+    ],
+    "quotes": [
+      2,
+      "single"
+    ],
+    "no-multi-spaces": [
+      "error",
+      {
+        "exceptions": {
+          "ImportDeclaration": true
+        }
+      }
+    ],
+    "max-classes-per-file": [
+      "error",
+      2
+    ]
+  },
+  "env": {
+    "browser": true,
+    "node": true
+  },
+  "settings": {
+    "react": {
+      "version": "detect"
+    },
+    "import/resolver": {
+      "webpack": {
+        "config": "./config/webpack.common.config.js"
+      }
+    }
+  }
+}

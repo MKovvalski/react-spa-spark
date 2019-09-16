@@ -13,7 +13,7 @@ module.exports = {
     }),
   ],
   resolve: {
-    extensions: [ '.js', '.jsx' ], // TODO: should add css,scss, sass?
+    extensions: [ '.js', '.jsx' ],
     modules: [ 'node_modules' ],
     alias: {
       // Add aliases to files in order to shorten relative paths

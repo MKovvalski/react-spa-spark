@@ -6,7 +6,8 @@
     "plugin:jest/recommended"
   ],
   "plugins": [
-    "jest"
+    "jest",
+    "emotion"
   ],
   "parser": "babel-eslint",
   "parserOptions": {
@@ -43,7 +44,11 @@
     "max-classes-per-file": [
       "error",
       2
-    ]
+    ],
+    "emotion/jsx-import": 2,
+    "emotion/no-vanilla": 2,
+    "emotion/import-from-emotion": 2,
+    "emotion/styled-import": 2
   },
   "env": {
     "browser": true,

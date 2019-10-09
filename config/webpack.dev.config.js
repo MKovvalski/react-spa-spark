@@ -34,17 +34,7 @@ module.exports = merge(
           test: /\.(js|jsx)$/,
           include: path.resolve(paths.appSrc),
           exclude: /(node_modules)/,
-          use: {
-            loader: 'babel-loader',
-            options: {
-              presets: [ '@babel/react' ],
-            },
-          },
-        },
-        {
-          test: /\.(sa|sc|c)ss$/,
-          include: [ path.resolve(paths.appSrc, 'styles') ],
-          use: [ 'style-loader', 'css-loader', 'sass-loader' ],
+          use: [ 'babel-loader' ],
         },
       ],
     },

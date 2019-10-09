@@ -1,1 +1,1 @@
-export default from './ExmapleComponentView'
+export default from './ExampleComponentView'

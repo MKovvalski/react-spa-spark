@@ -20,7 +20,7 @@ module.exports = {
       components: path.resolve(paths.appSrc, 'components'),
       pages: path.resolve(paths.appSrc, 'pages'),
       utils: path.resolve(paths.appSrc, 'utils'),
-      styles: path.resolve(paths.appSrc, 'styles'),
+      shared: path.resolve(paths.appSrc, 'shared'),
       'react-dom': '@hot-loader/react-dom',
     },
   },

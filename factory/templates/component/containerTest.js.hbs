@@ -1,0 +1,18 @@
+import React                       from 'react'
+import { render }                  from 'enzyme'
+import { ThemeProvider }           from 'emotion-theming'
+import {{camelCase name}}Container from '../{{camelCase name}}Container'
+import theme                       from '../../../shared/theme'
+
+describe('{{camelCase name}}Container', () => {
+  it('component renders correctly', () => {
+
+    const component = render(
+      <ThemeProvider theme={theme}>
+        <{{camelCase name}}View />
+      </ThemeProvider>
+    )
+
+    expect(component).toMatchSnapshot()
+  })
+})

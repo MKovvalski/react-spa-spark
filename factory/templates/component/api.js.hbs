@@ -1,0 +1,18 @@
+import React from 'react'
+{{#if container}}
+import {{camelCase name}}Container from './{{camelCase name}}Container'
+{{else}}
+import {{camelCase name}}View from './{{camelCase name}}View'
+{{/if}}
+
+const {{camelCase name}}Api = () => {
+  return (
+  {{#if container}}
+    <{{camelCase name}}Container />
+  {{else}}
+    <{{camelCase name}}View />
+  {{/if}}
+  )
+}
+
+export default {{camelCase name}}Api
